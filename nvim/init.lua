@@ -1,0 +1,17 @@
+require("baitholder.packer")
+require("baitholder.core.colors")
+require("baitholder.core.options")
+require("baitholder.core.keymaps")
+
+require("baitholder.plugins.telescope")
+require("baitholder.plugins.comment")
+require("baitholder.plugins.refactoring")
+require("baitholder.plugins.harpoon")
+require("baitholder.plugins.treesitter")
+require("baitholder.plugins.undotree")
+require("baitholder.plugins.fugitive")
+require("baitholder.plugins.trouble")
+require("baitholder.plugins.lsp.mason")
+require("baitholder.plugins.lsp.lsp")
+
+require("baitholder.plugins.rust")

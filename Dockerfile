@@ -56,7 +56,7 @@ RUN sed -i -E 's/^plugins=\((.*)\)/plugins=(git zsh-syntax-highlighting zsh-auto
 RUN echo "export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=226'" >> ~/.zshrc
 RUN echo  "export TERM=xterm-256color" >> ~/.zshrc
 RUN echo "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'" > ~/init_nvim.sh && chmod u+x /root/init_nvim.sh
-COPY .tmux.conf /root/.tmux.conf
+COPY tmux/.tmux.conf /root/.tmux.conf
 
 RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 

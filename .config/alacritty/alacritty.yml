@@ -1,0 +1,14 @@
+env:
+  TERM: xterm-256color
+   
+import:
+ - ~/.config/alacritty/themes/themes/tokyo-night.yaml
+
+# Font configuration
+font:
+  # Normal (Roman) font face
+  normal:
+    family: "JetBrainsMono Nerd Font"
+  # Bold font face
+  size: 18.0
+

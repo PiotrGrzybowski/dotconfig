@@ -6,4 +6,8 @@ vim.g.copilot_filetypes = {
   typescript = true,
   markdown = true,
   java = true,
+  sql = true,
+  toml = true,
+  json = true,
+  rust = true,
 }

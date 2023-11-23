@@ -14,6 +14,7 @@ require('mason-lspconfig').setup({
         "lua_ls",
         "ruff_lsp",
         "jdtls",
+        "rust_analyzer",
     },
 })
 
@@ -68,3 +69,7 @@ lspconfig.ruff_lsp.setup {
     }
   }
 }
+
+lspconfig.rust_analyzer.setup({
+    on_attach = on_attach,
+})

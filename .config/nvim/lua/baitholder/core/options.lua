@@ -24,7 +24,7 @@ vim.opt.undofile = true
 vim.opt.errorbells = false
 vim.opt.scrolloff = 16
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "140"
 
 vim.g.mapleader = " "
 vim.opt.autoindent = true

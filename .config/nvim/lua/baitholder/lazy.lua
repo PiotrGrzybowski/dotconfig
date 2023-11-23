@@ -35,4 +35,20 @@ require("lazy").setup({
     "mfussenegger/nvim-dap-python",
     "theHamsta/nvim-dap-virtual-text",
     { "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" }},
+    "nvim-telescope/telescope-media-files.nvim",
+    { 'kristijanhusak/vim-dadbod-ui',
+      dependencies = { 
+          { 'tpope/vim-dadbod', lazy = true },
+          { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true },
+      },
+      cmd = {
+        'DBUI',
+        'DBUIToggle',
+        'DBUIAddConnection',
+        'DBUIFindBuffer',
+      },
+      init = function()
+        vim.g.db_ui_use_nerd_fonts = 1
+      end,
+    }
 })
